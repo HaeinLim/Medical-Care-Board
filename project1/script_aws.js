@@ -1,4 +1,4 @@
-// js aws ver.
+// js aws version
 
 // 3팀 데이터 전체 조회
 async function fetchData3() {
