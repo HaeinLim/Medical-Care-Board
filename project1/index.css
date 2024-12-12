@@ -1,0 +1,67 @@
+body {
+    font-family: LINE Seed JP_OTF Regular;
+}
+
+.h1 {
+    font-size: 1.2rem; /* 1rem = (폰트 크기 미지정시)16px */
+    font-weight: bold;
+    color: dodgerblue;
+    text-align: center;
+}
+
+/* input, btns css */
+/* 한 구역의 전체 위치 조정 */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 시작점 지정 */
+    margin-top: 20px;
+}
+
+
+.inputContents {
+    display: flex;
+    flex-direction: column; /* 요소들 수직 정렬 */
+    gap: 10px; /* 요소들간의 여백 */
+}
+
+input {
+    height: 25px;
+}
+
+.btns {
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+
+/* 테이블 css */
+/* 테이블 구역의 위치 조정 */
+.twrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.tableContents {
+    font-weight: bold;
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 30px;
+}
+
+th, .trColor {
+    background-color: bisque;
+}
+
+.t2 th, .t3 th {
+    width: 700px;
+}

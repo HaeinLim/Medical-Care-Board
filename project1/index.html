@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <title>board page</title>
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="h1"><h1>게시판</h1></div>
+    <div class="wrapper">   <!-- 가운데 정렬을 위한 클래스 지정 -->
+        <div class="inputContents"> <!-- 각 input 클래스의 시작점을 맞추기 위한 클래스 지정 -->
+            <div class="input1">
+                <input type="text" id="messageId" placeholder="messageId" size="5">
+                <input type="text" id="purIdx" placeholder="purpose tag" size="12">
+                <input type="text" id="message" placeholder="message" size="37">
+            </div>
+            <div class="input2">
+                <input type="text" id="mean" placeholder="mean" size="12">
+                <input type="text" id="meanAddPhrase" placeholder="meanAddPhrase" size="12">
+                <input type="text" id="meanAddMor" placeholder="meanAddMor" size="12">
+                <input type="text" id="meanAddAll" placeholder="meanAddAll" size="12">
+            </div>
+            <div class="input3">
+                <input type="text" id="runningTime" placeholder="runningTime" size="26">
+                <input type="text" id="yesValue" placeholder="yesValue" size="14">
+                <input type="text" id="noValue" placeholder="noValue" size="14">
+            </div>
+            <div class="btns">
+                <button id="submit">등록</button>
+                <button onclick="window.location.reload()">새로고침</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="twrapper"> <!-- 테이블의 위치를 가운데로 정렬하기 위한 클래스 -->
+        <div class="tableContents"> <!-- 테이블 전체의 문자 위치나 굵기 등을 조정하는 클래스 -->
+            <table class="t1">
+                <thead>
+                    <tr>
+                        <th colspan="13">개인 데이터 조회</th>
+                    </tr>
+                    <tr class="trColor">
+                        <td>Message ID</td>
+                        <td>purposeIdx</td>
+                        <td>Message</td>
+                        <td>mean</td>
+                        <td>meanAddPhrase</td>
+                        <td>meanAddMor</td>
+                        <td>meanAddAll</td>
+                        <td>runningTime</td>
+                        <td>Send Date</td>
+                        <td>Receive Date</td>
+                        <td>Yes Value</td>
+                        <td>No Value</td>
+                        <td>Yes or No</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 데이터가 보여질 위치 -->
+                </tbody>    
+            </table>
+        </div>
+    </div>
+
+    <div class="twrapper">
+        <div class="tableContents">
+            <table class="t2">
+                <thead>
+                    <tr>
+                        <th colspan="2">3팀 데이터 조회</th>
+                    </tr>
+                    <tr class="trColor">
+                        <td>Message ID</td>
+                        <td>Message</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 데이터가 보여질 공간 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="twrapper">
+        <div class="tableContents">
+            <table class="t3">
+                <thead>
+                    <tr>
+                        <th colspan="2">전체 데이터 조회</th>
+                    </tr>
+                    <tr class="trColor">
+                        <td>Message ID</td>
+                        <td>Message</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 데이터가 보여질 공간 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

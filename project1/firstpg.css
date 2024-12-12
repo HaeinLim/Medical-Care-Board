@@ -1,0 +1,34 @@
+.wrapper { /* 모든 컨텐츠 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh; /* 미설정시 수직 중앙 정렬은 이루어지지 않음 */
+                        /* min-height: 요소의 최소 세로 크기 설정 */  
+                        /* dvh: 뷰 포트 백분율 단위 중 하나, 브라우저 자체 ui 크기가 변할 때마다 값 갱신 */
+}
+
+.content { /* content 테두리와 버튼 간의 거리 조정 */
+    border-radius: 1rem; /* 폰트 크기 설정x: 1rem = 16px */
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    padding: 10px;
+}
+
+#clickBtn {
+    width: 200px;
+    height: 100px;
+    border-radius: 1rem;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 25pt;
+    margin: 3px;
+}
+
+#clickBtn:hover {
+    background-color:darkseagreen; 
+}
