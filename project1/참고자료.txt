@@ -1,2 +1,0 @@
-요소간 레이아웃 잡기(헤더, 컨테이너, 푸터) 참고할 자료
-https://codezone.tistory.com/entry/html-css-height-100-%EB%86%92%EC%9D%B4%EC%9D%98-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%EC%9E%A1%EA%B8%B0
